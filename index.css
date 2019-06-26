@@ -8,13 +8,7 @@ a{
   font-size: 20px;
   font-weight: bold;
 }
-.callback{
-  display: none;
-}
-.drop_wrapper{
-  display: none;
-}
-.header #menu{
+.drop_wrapper, .header #menu{
   display: none;
 }
 .header {
@@ -36,6 +30,7 @@ a{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 22px;
+  margin-right: 20px;
 }
 .header .logo .black_side{
   position: absolute;
@@ -87,33 +82,21 @@ a{
   grid-template-columns: 1fr 1fr;
 }
 .advertising .scheme img {
-  width: 95%;
-  height: 90%;
-}
-.main {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+  width: 40vw;
+  height: 50vw;
 }
 .main .title{
   font-family: 'Montserrat', bold;
-  margin-left: -30px;
-  bottom: 1px solid black;
   display: grid;
-  align-self: center;
-  font-weight: bold;
+  justify-self: start;
 }
-.main .title label:first-child{
-  font-size: 75px;
-}
-.main .title label:last-child{
-  font-size: 52px;
+.main .title h1{
+  font-size: 65px;
 }
 .main .address{
   display: grid;
   grid-template-rows: 1fr 1fr;
-  font-size: 38px;
-  margin-top: 30px;
+  font-size: 26px;
 }
 .swap_down button{
   margin-top: 30px;
@@ -129,7 +112,7 @@ a{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin-top: 50px;
-  font-size: 164px;
+  font-size: 124px;
   text-align: center;
   color: #DBDBDB
 }
@@ -146,6 +129,9 @@ a{
 }
 .about_office{
   margin-top: 20px;
+}
+.about_office .wrapper .bolt, .about_office .wrapper .wifi{
+  border-left: none;
 }
 .about_office .wrapper{
   font-family: 'Montserrat' , bold;
@@ -178,6 +164,7 @@ a{
   font-family: 'Montserrat' , bold;
   display: grid;
   border: 1px solid lightgrey;
+  border-top: none;
   align-content: center;
   text-align: center;
   height: 80px;
@@ -192,72 +179,69 @@ a{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.tarrifs .wrapper div{
-  padding-top: 30px;
-  display: grid;
-  text-align: center;
-  align-content: center;
-  border: 1px solid lightgrey;
+.tarrifs .wrapper .price_list1,.tarrifs .wrapper .price_list2{
+  border-left: none;
 }
-.tarrifs .wrapper .price_list{
-  height: 325px;
+.tarrifs .wrapper div{
+  display: grid;
+  border: 1px solid lightgrey;
+  text-align: center;
 }
 .tarrifs .wrapper .label_text .title{
   font-family: 'Montserrat', bold;
-  margin-bottom: 15px;
-  font-size: 3.2em;
+  font-size: 2.3em;
   font-weight: bold;
 }
-.tarrifs .wrapper .label_text {
-  border: none
+.tarrifs .wrapper .price_list ._price{
+  padding-top: 20px;
+  align-items: end;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-self: center;
+}
+.tarrifs .wrapper .price_list div{
+  border: none;
 }
 .tarrifs .wrapper .label_text .wrapper_paragraph{
+  font-family: 'Montserrat', bold;
   border: none;
-  font-size: 12px;
-  margin-bottom: 30px;
-  padding: 15px;
+  font-size: 10px;
+  padding: 25px;
 }
 .tarrifs .wrapper .label_text .desc{
-  font-size: 1em;
+  font-size: 1.2em;
 }
-.tarrifs .wrapper .price_list .price {
-  display: grid;
-  justify-self: center;
-  grid-template-columns: 50% 50%;
-  border: none;
+.tarrifs .wrapper .price_list ._price label{
+  font-size: 1.6em;
 }
-.tarrifs .wrapper .price_list .price label{
-  font-size: 1.8em;
-}
-.tarrifs .wrapper .price_list i{
-  margin-top: 4px;
-  padding-right: 2px;
-  font-size: 2em;
+.tarrifs .wrapper ._price i{
+  padding-bottom: 6px;
+  padding-right: 3px;
+  font-size: 1.2em;
 }
 .tarrifs .wrapper .price_list button{
   font-size: 1.4em;
   background: #fff;
+  max-height: 42px;
   height: 42px;
   cursor: pointer;
   border: none;
   border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
 }
 .tarrifs .footer{
-  font-family: 'Montserrat' , bold;
+  font-family: 'Montserrat' , sans-serif;
   display: grid;
   border: 1px solid lightgrey;
+  border-top: none;
   align-content: center;
   text-align: center;
   height: 80px;
   grid-column: 1/-1;
+  text-transform: uppercase;
 }
 .tarrifs .footer label{
   font-weight: bold;
   font-size: 1em;
-}
-.place::-webkit-input-placeholder {
-  color: #ccc;
 }
 .contacts{
   margin: 20px 70px 50px 70px;
@@ -269,6 +253,7 @@ a{
   border: 1px solid lightgrey;
   width: 90%;
   margin-left: 5%;
+  margin-top: 40px;
 }
 .button_wrapper1 button,.button_wrapper2 button{
   font-family: 'Montserrat', bold;
@@ -286,7 +271,7 @@ a{
 .wrapper_contacts .form{
   display: grid;
   grid-template-columns: 1fr;
-  border: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
   grid-column: 2;
   grid-row: 1;
 }
@@ -314,9 +299,6 @@ a{
   grid-column: 1;
   font-size: 18px;
   margin-top: 30px;
-}
-.wrapper_contacts .button_wrapper1 button ,.wrapper_contacts .button_wrapper2 button {
-  font-size: 22px;
 }
 .form .wrapper_textarea textarea{
   outline: none;
@@ -357,11 +339,20 @@ a{
   margin-top: 40px;
   font-size: 18px;
 }
+.wrapper_contacts .button_wrapper1 button ,.wrapper_contacts .button_wrapper2 button {
+  font-size: 22px;
+  border: none;
+  border-top: 1px solid lightgrey;
+}
+.wrapper_contacts .button_wrapper2 button {
+  border-left: 1px solid lightgrey;
+}
 iframe {
   margin-top: 30px;
-  width: 100%;
+  width: 90%;
   height: 300px;
   border: none;
+  margin-left: 5%;
 }
 .last_footer{
   width: 100%;
@@ -381,78 +372,34 @@ iframe {
   align-items: center;
   justify-self: center;
 }
-
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
-  .header .menu_contacts, .header .links {
-    display: none;
+@media (min-width: 627px) and (max-width: 800px) {
+  .title_center{
+    font-size: 6em
   }
-  .drop_wrapper{
-    position: fixed;
-    background: #fff;
-    z-index: 1000;
-    margin-top: 131px;
-    border-bottom: 1px solid lightgrey;
-    width: 100%;
-    -webkit-box-shadow: 0px 16px 17px -2px rgba(224,217,224,1);
-    -moz-box-shadow: 0px 16px 17px -2px rgba(224,217,224,1);
-    box-shadow: 0px 16px 17px -2px rgba(224,217,224,1);
-  }
-  .head_contact_wrap{
-    display: grid;
-    margin-top: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-self: center;
-    font-family: 'Montserrat', bold;
-    grid-gap: 100px;
-  }
-  .head_links_wrap{
-    display: grid;
-    justify-self: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    grid-gap: 40px;
-  }
-  .head_contact_wrap a{
-    font-size: 1.7em;
-  }
-  .head_links_wrap{
-    font-size: 30px;
-  }
-  .header {
-    display: grid;
-    height: 130px;
-    grid-template-columns: 1fr 1fr;
-  }
-  .header #menu {
-    align-self: center;
+  .advertising .scheme img {
     justify-self: end;
-    display: block;
-    font-size: 30px;
-    margin-right: 50px;
-  }
-  .align_blocks{
-    margin: 0;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
   }
   .advertising .scheme{
-    margin-left: 12.5%;
-    width: 80%;
-    grid-column: 1/-1;
-    grid-row: 1
+    grid-row: 1;
+    margin-left: 5%;
+    grid-column: 1/-1
   }
   .advertising .main{
+    grid-row: 2;
+    grid-column: 1/-1;
     width: 100%;
     text-align: center;
-    margin-left: 30%;
     margin-top: 30px;
+    display: grid;
+    justify-self: end;
   }
   .advertising .main .title{
+    display: grid;
     font-family: 'Montserrat' , bold;
-    font-weight: bold;
-    margin-right: -100px;
+    justify-self: center;
   }
   .advertising .main .swap_down button{
     width: 400px;
@@ -461,88 +408,6 @@ and (-webkit-device-pixel-ratio : 3) {
   }
   .advertising .main .swap_down button a{
     font-size: 40px;
-  }
-  .title_center{
-    margin-left: 5%;
-  }
-  .condition .office_image{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 90%;
-    margin-left: 5%;
-  }
-  .about_office{
-    height: 1400px;
-    margin-left: 5%;
-    width: 93%;
-  }
-  .about_office .wrapper .chair p,.about_office .wrapper .bolt p,.about_office .wrapper .wifi p{
-    font-size: 2em;
-  }
-  .about_office .wrapper .bolt .title, .about_office .wrapper .wifi .title ,.about_office .wrapper .chair .title{
-    font-size: 3.2em;
-  }
-  .about_office .wrapper div{
-    width: 90%;
-    height: 35vw;
-  }
-  .about_office .wrapper{
-    display: grid;
-    grid-template-rows: repeat(4,1fr);
-    grid-template-columns: 1fr;
-  }
-  .condition .footer{
-    margin-top: -305px;
-    margin-left: 5%;
-    font-size: 22px;
-    width: 90%;
-  }
-  .tarrifs .wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: 5%;
-    width: 90%;
-  }
-  .tarrifs .wrapper .price_list{
-    height: 500px;
-    border: 2px solid lightgrey
-  }
-  .tarrifs .wrapper .price_list .price{
-    font-size: 30px;
-  }
-  .tarrifs .wrapper .price_list .label_text{
-    font-size: 24px;
-  }
-  .tarrifs .wrapper .price_list button{
-    border: 2px solid lightgrey;
-    border-left: none;
-    border-right: none;
-  }
-  .tarrifs .wrapper .label_text .desc{
-    font-weight: bold;
-    font-size: 45px;
-  }
-  .tarrifs .wrapper .wrapper_paragraph label{
-    font-size: 30px;
-  }
-  .tarrifs .footer{
-    width: 89.5%;
-    font-size: 24px;
-    margin-left: 5%;
-  }
-  .tarrifs .wrapper .price_list button{
-    font-size: 39px;
-    height: 70px;
-  }
-  .contacts .form .wrapper_input{
-    grid-column: 1/-1;
-    display: grid;
-  }
-  .contacts .form .wrapper_input input{
-    font-size: 24px;
-  }
-  .footer div{
-    font-size: 24px;
   }
   .wrapper_contacts{
     width: 90%;
@@ -554,24 +419,14 @@ and (-webkit-device-pixel-ratio : 3) {
     display: grid;
     grid-row: 2
   }
-  .button_wrapper1 button,.button_wrapper2 button{
-    font-family: 'Montserrat', bold;
-    background: #fff;
-    outline: none;
-    border: none;
-    border: 1px solid lightgrey;
-    font-size: 2px;
-    font-weight: bold;
-    cursor: pointer;
-    height: 50px;
-    background: #fff;
+  .wrapper_contacts{
+    border: 2px solid lightgrey;
   }
   .wrapper_contacts .form{
     display: grid;
     grid-row: 1;
     width: 100%;
     grid-column: 1/-1;
-    border: 1px solid lightgrey;
   }
   .wrapper_contacts .form .wrapper_input,.wrapper_contacts .form .wrapper_textarea{
     display: grid;
@@ -580,50 +435,37 @@ and (-webkit-device-pixel-ratio : 3) {
   }
   .wrapper_contacts .button_wrapper1 button ,.wrapper_contacts .button_wrapper2 button {
     font-size: 28px;
-  }
-  .wrapper_contacts .button_wrapper1,.wrapper_contacts .button_wrapper2  {
-    font-family: 'Montserrat', bold;
-    background: #fff;
+    border: 2px solid lightgrey;
     outline: none;
-    border: none;
-    border: 1px solid lightgrey;
-    font-weight: bold;
-    cursor: pointer;
-    height: 80px;
-  }
-  .form .wrapper_input{
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    padding: 20px;
+    height: 50px;
+    margin-top: 30px;
+    border-left: none;
+    border-right: none;
   }
   .form .wrapper_input input{
+    font-family: 'Montserrat', bold;
     border: none;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
     outline: none;
     font-size: 24px;
     color: black;
   }
   .form .wrapper_input label{
-    font-size: 35px;
-  }
-  .form .wrapper_textarea{
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    padding: 20px;
+    font-size: 30px;
   }
   .form .wrapper_textarea label{
     margin-top: 30px;
+    font-size: 30px;
   }
   .form .wrapper_textarea textarea{
     outline: none;
     border: none;
-    border-bottom: 1px solid lightgrey;
     font-size: 20px;
-    max-width: 100%;
-    max-height: 70px;
-    height: 15px;
+    max-width: 60vw;
+    border-bottom: 2px solid lightgrey;
+    height: 35px;
     margin-bottom: 20px;
-    width: 400px;
+    width: 100%;
   }
   .wrapper_contacts .footer{
     display: grid;
@@ -641,7 +483,285 @@ and (-webkit-device-pixel-ratio : 3) {
   }
   .wrapper_contacts .footer .email{
     font-size: 18px;
+  }
+  .wrapper_contacts .footer .prone_number{
+    display: grid;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .wrapper_contacts .footer .street{
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  .wrapper_contacts .button_wrapper1{
+    display: grid;
+    grid-row: 4
+  }
+}
+
+@media (min-width: 221px) and (max-width: 627px) {
+  .header .menu_contacts, .header .links {
+    display: none;
+  }
+  .drop_wrapper{
+    position: fixed;
+    background: #fff;
+    z-index: 1000;
+    height: 95px;
+    margin-top: 71px;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    -webkit-box-shadow: 0px 16px 17px -2px rgba(224,217,224,1);
+    -moz-box-shadow: 0px 16px 17px -2px rgba(224,217,224,1);
+    box-shadow: 0px 16px 17px -2px rgba(224,217,224,1);
+  }
+  .head_contact_wrap{
+    display: grid;
     margin-top: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    font-family: 'Montserrat', bold;
+    grid-gap: 60px;
+  }
+  .head_links_wrap{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    grid-gap: 40px;
+  }
+  .head_contact_wrap a{
+    font-size: 1.4em;
+  }
+  .head_links_wrap{
+    font-size: 26px;
+  }
+  .header {
+    display: grid;
+    height: 70px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .header #menu {
+    align-self: center;
+    justify-self: end;
+    display: block;
+    font-size: 30px;
+    margin-right: 50px;
+  }
+  .align_blocks{
+    margin: 0;
+  }
+  .advertising .scheme{
+    width: 80%;
+    justify-self: center;
+    grid-row: 1;
+    margin-left: 5%;
+    grid-column: 1/-1
+  }
+  .advertising .scheme img{
+    width: 90%;
+    height: 100%;
+  }
+  .advertising .main{
+    grid-row: 2;
+    grid-column: 1/-1;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: grid;
+    justify-self: end;
+  }
+  .advertising .main .title{
+    display: grid;
+    font-family: 'Montserrat' , bold;
+    justify-self: center;
+  }
+  .advertising .main .swap_down button{
+    width: 400px;
+    height: 80px;
+    border: 3px solid lightgrey;
+  }
+  .advertising .main .swap_down button a{
+    font-size: 40px;
+  }
+  .title_center{
+    text-align: center;
+    font-size: 6.5em;
+  }
+  .condition .office_image{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin-left: 5%;
+    grid-gap: 10px;
+  }
+  .about_office{
+    height: 730px;
+    margin-left: 5%;
+    width: 93.5%;
+  }
+  .about_office .wrapper .chair p,.about_office .wrapper .bolt p,.about_office .wrapper .wifi p{
+    font-size: 1.2em;
+  }
+  .about_office .wrapper .bolt .title, .about_office .wrapper .wifi .title ,.about_office .wrapper .chair .title{
+    font-size: 2.2em;
+  }
+  .about_office .wrapper div{
+    width: 85%;
+    border: 2px solid lightgrey;
+  }
+  .about_office .wrapper .bolt, .about_office .wrapper .wifi{
+    border-top: none;
+    border-left: 2px solid lightgrey
+  }
+  .about_office .wrapper i {
+    font-size: 80px;
+  }
+  .about_office .wrapper{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: 1fr;
+  }
+  .condition .footer{
+    margin-left: 5%;
+    font-size: 14px;
+    width: 89.3%;
+    border: 2px solid lightgrey;
+    border-top: none;
+  }
+  .tarrifs .wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 5%;
+    width: 90%;
+  }
+  .tarrifs .wrapper .price_list{
+    border: 2px solid lightgrey;
+    height: 400px;
+  }
+  .tarrifs .wrapper .price_list ._price{
+    font-size: 22px;
+  }
+  .tarrifs .wrapper .price_list ._price i{
+    font-size: 30px;
+    padding-top: 5px;
+  }
+  .tarrifs .wrapper .price_list .label_text .title{
+    font-size: 50px;
+  }
+  .tarrifs .wrapper .price_list button{
+    border: 1px solid lightgrey;
+    border-bottom: none;
+    outline: none;
+    padding-top: 10px;
+  }
+  .tarrifs .wrapper .label_text .desc{
+    font-weight: bold;
+    font-size: 34px;
+  }
+  .tarrifs .wrapper .wrapper_paragraph label{
+    font-size: 20px;
+  }
+  .tarrifs .wrapper .price_list button{
+    font-size: 35px;
+    border-top: 2px solid lightgrey;
+    border-right: none;
+  }
+  .tarrifs .wrapper .price_list2,.tarrifs .wrapper .price_list1 {
+    border-top: none;
+  }
+  .tarrifs .wrapper .price_list2 button{
+    border-left: none;
+  }
+  .tarrifs .footer{
+    font-size: 18px;
+    margin-left: 5%;
+    border: 2px solid lightgrey;
+    border-top: none;
+  }
+  .contacts .form .wrapper_input{
+    grid-column: 1/-1;
+    display: grid;
+  }
+  .contacts .form .wrapper_input input{
+    font-size: 24px;
+  }
+  .wrapper_contacts{
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .wrapper_contacts .button_wrapper2{
+    display: grid;
+    grid-row: 2
+  }
+  .wrapper_contacts{
+    border: 2px solid lightgrey;
+  }
+  .wrapper_contacts .form{
+    display: grid;
+    grid-row: 1;
+    width: 100%;
+    grid-column: 1/-1;
+  }
+  .wrapper_contacts .form .wrapper_input,.wrapper_contacts .form .wrapper_textarea{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .wrapper_contacts .button_wrapper1 button ,.wrapper_contacts .button_wrapper2 button {
+    font-size: 28px;
+    border: 2px solid lightgrey;
+    outline: none;
+    height: 50px;
+    margin-top: 30px;
+    border-left: none;
+    border-right: none;
+  }
+  .form .wrapper_input input{
+    font-family: 'Montserrat', bold;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    font-size: 24px;
+    color: black;
+  }
+  .form .wrapper_input label{
+    font-size: 30px;
+  }
+  .form .wrapper_textarea label{
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .form .wrapper_textarea textarea{
+    outline: none;
+    border: none;
+    font-size: 20px;
+    max-width: 70vw;
+    max-height: 70px;
+    border-bottom: 2px solid lightgrey;
+    height: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .wrapper_contacts .footer{
+    display: grid;
+    grid-row: 3;
+    text-align: center;
+  }
+  .wrapper_contacts .footer .icons i{
+    padding-left: 25px;
+  }
+  .wrapper_contacts .footer .icons{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 22px;
+  }
+  .wrapper_contacts .footer .email{
+    font-size: 18px;
   }
   .wrapper_contacts .footer .prone_number{
     display: grid;
@@ -660,6 +780,52 @@ and (-webkit-device-pixel-ratio : 3) {
     margin-top: 30px;
     width: 90%;
     margin-left: 5%;
+  }
+}
+@media (min-width: 221px) and (max-width: 557px) {
+  .header .logo{
+    margin-left: -40px;
+  }
+  .header #menu{
+    margin-right: 10px;
+  }
+  .title_center{
+    font-size: 6em;
+  }
+  .tarrifs .price_list2 button{
+    border: 2px solid lightgrey
+  }
+  .tarrifs .footer{
+    margin-top: 40px;
+    width: 89.2%;
+  }
+}
+@media (min-width: 221px) and (max-width: 487px) {
+  .title_center{
+    font-size: 4.5em;
+  }
+  .advertising .main{
+    grid-row: 2;
+    grid-column: 1/-1;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: grid;
+    justify-self: end;
+  }
+  .advertising .main .title h1{
+    font-size: 45px;
+  }
+  .advertising .main .swap_down button{
+    height: 60px;
+  }
+  .advertising .main .swap_down button a{
+    font-size: 20px;
+  }
+  .tarrifs .footer{
+    margin-top: 1px;
+    width: 89%;
+
   }
 }
   /* width 1263 */
